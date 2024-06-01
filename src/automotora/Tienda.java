@@ -1,7 +1,12 @@
+package automotora;
+
 public class Tienda {
     private Vendedor vendedor;
     private Vehiculo vehiculo;
     private int stock;
+
+    public Tienda() {
+    }
 
     public Tienda(Vendedor vendedor, Vehiculo vehiculo, int stock) {
         this.vendedor = vendedor;
@@ -35,7 +40,7 @@ public class Tienda {
 
     @Override
     public String toString() {
-        return "Tienda{" +
+        return "automotora.Tienda{" +
                 "stock=" + stock +
                 ", vendedor=" + vendedor +
                 ", vehiculo=" + vehiculo +
@@ -45,8 +50,8 @@ public class Tienda {
     public String existeStock(){
         if (getStock() > 0){
             return "cantidad de stock es " + getStock();
-        } else {
-            return "No hay stock disponible";
+        }
+        return "No hay stock disponible";
         }
     }
 }

@@ -1,3 +1,5 @@
+package automotora;
+
 public class Vendedor extends Persona{
     private String direccion;
 
@@ -19,7 +21,7 @@ public class Vendedor extends Persona{
 
     @Override
     public String toString() {
-        return "Vendedor{" +
+        return "automotora.Vendedor{" +
                 "rut='" + getRut() + '\'' +
                 ", nombre='" + getNombre() + '\'' +
                 ", edad=" + getEdad() +

@@ -1,5 +1,10 @@
+package automotora;
+
 public class MiniBus extends Bus {
     private String tipoViaje;
+
+    public MiniBus() {
+    }
 
     public MiniBus(String color, String patente, int cantidadDeAsientos, String tipoViaje) {
         super(color, patente, cantidadDeAsientos);
@@ -15,11 +20,11 @@ public class MiniBus extends Bus {
     }
 
     public void imprimeBus() {
-        System.out.println("MiniBus{" +
-                "color='" + super.getColor() + '\'' +
-                ", patente='" + super.getPatente() + '\'' +
-                ", cantidadDeAsientos=" + super.getCantidadDeAsientos() +
-                ", tipoViaje='" + tipoViaje + '\'' +
+        System.out.println("automotora.MiniBus{" +
+                "color='" + getColor() + '\'' +
+                ", patente='" + getPatente() + '\'' +
+                ", cantidadDeAsientos=" + getCantidadDeAsientos() +
+                ", tipoViaje='" + this.tipoViaje + '\'' +
                 '}');
 
     }

@@ -1,6 +1,11 @@
+package automotora;
+
 public class Vehiculo {
     private String color;
     private String patente;
+
+    public Vehiculo() {
+    }
 
     public Vehiculo(String color, String patente) {
         this.color = color;
@@ -25,7 +30,7 @@ public class Vehiculo {
 
     @Override
     public String toString() {
-        return "Vehiculo{" +
+        return "automotora.Vehiculo{" +
                 "color='" + color + '\'' +
                 ", patente='" + patente + '\'' +
                 '}';

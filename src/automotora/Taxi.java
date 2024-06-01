@@ -1,5 +1,10 @@
+package automotora;
+
 public class Taxi extends Vehiculo{
     private int valorPasaje;
+
+    public Taxi() {
+    }
 
     public Taxi(String color, String patente, int valorPasaje) {
         super(color, patente);
@@ -16,19 +21,19 @@ public class Taxi extends Vehiculo{
 
     public int valorPasaje(int monto){
         int vuelto = 0;
-        if (monto > valorPasaje){
+        if (monto >= valorPasaje){
             return vuelto = monto - valorPasaje;
-        } else {
-            return monto;
         }
-    }
+        return monto;
+        }
 
     @Override
     public String toString() {
-        return "Taxi{" +
+        return "automotora.Taxi{" +
                 "color='" + getColor() + '\'' +
                 ", patente='" + getPatente() + '\'' +
                 ", valorPasaje=" + valorPasaje +
                 '}';
     }
+
 }

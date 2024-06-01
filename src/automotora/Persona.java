@@ -1,3 +1,5 @@
+package automotora;
+
 public class Persona {
     private String rut;
     private String nombre;
@@ -38,7 +40,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "automotora.Persona{" +
                 "rut='" + rut + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", edad=" + edad +

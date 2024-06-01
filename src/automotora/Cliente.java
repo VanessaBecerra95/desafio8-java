@@ -1,3 +1,5 @@
+package automotora;
+
 public class Cliente extends Persona {
     public Cliente() {
     }
@@ -8,7 +10,7 @@ public class Cliente extends Persona {
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "automotora.Cliente{" +
                 "rut='" + getRut() + '\'' +
                 ", nombre='" + getNombre() + '\'' +
                 ", edad=" + getEdad() +
